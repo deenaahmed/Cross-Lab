@@ -12,7 +12,7 @@ import { SettingPage } from '../pages/setting/setting';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
-const config: SocketIoConfig = { url: 'ws://localhost:3001', options: {} };
+const config: SocketIoConfig = { url: 'ws://172.16.6.89:3001', options: {} };
 
 @NgModule({
   declarations: [

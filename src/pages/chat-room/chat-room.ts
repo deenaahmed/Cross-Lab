@@ -13,7 +13,7 @@ export class ChatRoomPage {
   nickname = '';
   message = '';
  
-  constructor(private navCtrl: NavController, private navParams: NavParams, private socket: Socket, private toastCtrl: ToastController) {
+  constructor(private navCtrl: NavController, private navParams: NavParams, public socket: Socket, private toastCtrl: ToastController) {
     this.nickname = this.navParams.get('nickname');
  
     this.getMessages().subscribe(message => {
